@@ -32,7 +32,7 @@
             </div>
             <div class="p-0 d-flex flex-column flex-wrap">
               <div class="p-0">
-                <span>cought at</span>
+                <span>caught at</span>
               </div>
               <div class="p-0">
                 <small>  {{ pokemons.created_at.split('T')[0] }}</small>

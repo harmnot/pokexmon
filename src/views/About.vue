@@ -7,7 +7,7 @@
       <h3 class="mx-auto"> PokeXmon</h3>
       <p style="line-height: 1.4;"> Hello, my name is Muhammad and i am the creator for this cute game. <br />
         this game is very simple and fun,
-        you just need to pick the pokemon what you want then cought them, give the nickname and collect them to your email
+        you just need to pick the pokemon what you want then catch them, give the nickname and collect them to your email
         show your collections to your friends and enjoy our cute pokemons :)
       </p>
     </div>

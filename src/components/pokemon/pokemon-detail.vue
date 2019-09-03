@@ -48,14 +48,15 @@
         <div class="mb-4 p-1" v-if="savedToBag">
           <button type="button" class="btn btn-primary" style="background-color: #ffcb05;" @click="allPokemons()" >Find more pokemons</button>
         </div>
-        <div class="spacetop text-center d-flex flex-column flex-wrap" v-if="failedCought && !temp">
-          <div class="mt-4 p-2">
-            <h4> try cought another pokemons</h4>
+        <div class="p-1 pic" v-if="failedCought && !temp" style="margin-top: 78px;">
+          <img src="../../assets/caat.jpg" class="img-fluid" alt="pokex">
+        </div>
+          <div class="mt-2 p-1 text-center" v-if="failedCought && !temp">
+            <h4> try caught another pokemons</h4>
           </div>
-          <div class="p-2">
+          <div class="mb-4 p-1" v-if="failedCought && !temp">
             <button type="button" class="btn btn-primary" @click="allPokemons()">All pokemons</button>
           </div>
-        </div>
         <div class="p-0 mb-4" v-if="!saveAndGiveName && !failedCought">
           <h1>{{ pokemonDetail.name }}</h1>
         </div>
@@ -105,7 +106,7 @@
           </div>
         </div>
         <div class="mb-4 p-2" v-if="!cought && (!saveAndGiveName && !failedCought)">
-          <button type="button" class="btn btn-primary" @click="coughtPokemon()">Cought this</button>
+          <button type="button" class="btn btn-primary" @click="coughtPokemon()">catch this</button>
         </div>
       </div>
     </div>
@@ -262,8 +263,6 @@ export default {
   background-color #3466AF
 a:not([href]):not([tabindex])
   color white
-.spacetop
-  margin-top 4.5rem
 .btn
   padding 0.9rem 1.75rem
   background-color #3466AF

@@ -13,7 +13,7 @@
         </div>
       </div>
     </div>
-    <div class="pos-f-t d-flex flex-row justify-content-between" v-else>
+    <div class="pos-f-t d-flex flex-row justify-content-between" v-if="isMobile">
       <nav class="mt-2 mb-4 navbar navbar-dark">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -28,7 +28,7 @@
         </div>
       </nav>
     </div>
-    <div class="mb-4 collapse" id="navbarToggleExternalContent">
+    <div class="mb-4 collapse" id="navbarToggleExternalContent" v-if="isMobile">
       <div class="d-flex flex-column ">
         <div class="ml-4 p-2 d-flex flex-row">
           <div class="mr-1">

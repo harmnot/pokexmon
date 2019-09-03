@@ -3,8 +3,8 @@
     <div class="mt-4 container text-center">
       <div class="d-flex flex-column">
         <div class="p-2">
-          <h2> <b>Cought your Pokemon</b> </h2>
-          <p class="mt-4"> if you been cought your favorite pokemon, search your collection here</p>
+          <h2> <b>Caught your Pokemon</b> </h2>
+          <p class="mt-4"> if you have caught your favorite pokemon, search your collection here</p>
         </div>
         <div class="mb-2 d-flex flex-wrap justify-content-center">
           <div class="mb-2 col-md-4">
@@ -38,7 +38,7 @@
                 <h4> PokeXmon </h4>
               </div>
               <div class="p-0 text-left">
-                <p> take your time to be relax and have fun with our cute pokemons, <br>they wait you to be yours</p>
+                <p> take time to relax and have fun with our cute pokemons, <br>they wait to be yours</p>
               </div>
             </div>
           </div>
