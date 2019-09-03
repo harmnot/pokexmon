@@ -10,8 +10,8 @@
         </div>
         <h2> {{ myPokex.error }}</h2>
       </div>
-      <div class="mb-4"v-else>
-        <div class="mt-4 mb-4 text-center">
+      <div class="mt-4 mb-4"v-else>
+        <div class="mt-4 mt-4 mb-4 text-center">
           <h4 style="word-break: break-all;"> {{ email }}</h4>
         </div>
         <PokemonList :myPokex="true" :myListPokex="myPokex.pokex" :pageList="true" :size="9" />

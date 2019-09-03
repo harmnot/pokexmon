@@ -19,7 +19,7 @@
     </div>
     <div class="mb-4 d-flex flex-row flex-wrap white shadow-lg bg-white rounded" :class="{'justify-content-around': !pageList, 'justify-content-center': pageList }" v-if="myPokex">
       <div class="p-1 mt-4 text-center d-flex flex-wrap" v-if="myListPokex.length > 0" v-for="(pokemons, index) in thePaginatedData" :key="index">
-        <div class="p-1 m-1 d-flex  flex-column flex-content-around shadow-lg p-2 mb-4 bg-white rounded box">
+        <div class="p-1 m-1 d-flex flex-column flex-content-around shadow-lg p-2 mb-4 bg-white rounded box">
           <div class="text-right">
             <span class="mr-3" style="color:#CC0000; cursor: pointer;" @click="deleteThisPokemon(pokemons._id, pokemons.pokemon._id)"> X </span>
           </div>
