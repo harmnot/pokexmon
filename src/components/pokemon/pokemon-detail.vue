@@ -52,7 +52,7 @@
           <img src="../../assets/caat.jpg" class="img-fluid" alt="pokex">
         </div>
           <div class="mt-2 p-1 text-center" v-if="failedCought && !temp">
-            <h4> try caught another pokemons</h4>
+            <h4> try catch another pokemons</h4>
           </div>
           <div class="mb-4 p-1" v-if="failedCought && !temp">
             <button type="button" class="btn btn-primary" @click="allPokemons()">All pokemons</button>

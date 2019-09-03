@@ -3,7 +3,7 @@
     <div class="mt-4 container text-center">
       <div class="d-flex flex-column">
         <div class="p-2">
-          <h2> <b>Caught your Pokemon</b> </h2>
+          <h2> <b>Catch your Pokemon</b> </h2>
           <p class="mt-4"> if you have caught your favorite pokemon, search your collection here</p>
         </div>
         <div class="mb-2 d-flex flex-wrap justify-content-center">
