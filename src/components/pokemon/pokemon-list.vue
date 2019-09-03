@@ -131,20 +131,24 @@ export default {
               this.$swal.showLoading();
             }
           })
-          return this.$axios.delete('/pokex/'+ id);
-        }
-      }).then(( { data } )=> {
-        if(data.result === 'successfully deleted') {
-          this.$store.commit('DELETE_MYPOKEMON', {id: id, idPokemon: idPokemon });
+          this.$axios.delete('/pokex/'+ id)
+          .then(({data}) => {
+            if(data.result === 'successfully deleted') {
+              this.$store.commit('DELETE_MYPOKEMON', {id: id, idPokemon: idPokemon });
+              this.$swal.close();
+            }
+          })
+          .catch(err => {
+            this.$swal.fire({
+              title:'Error',
+              text: 'something went wrong',
+              type: 'error',
+              timer: 1500,
+            });
+          })
+        }  else {
           this.$swal.close();
         }
-      }).catch(err => {
-        this.$swal.fire({
-          title:'Error',
-          text: 'something went wrong',
-          type: 'error',
-          timer: 1500,
-        });
       })
     },
   },
