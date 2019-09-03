@@ -1,6 +1,6 @@
 <template>
   <div class="white mb-4 container" style="border-radius: 30px" >
-    <div class="d-flex justify-content-center">
+    <div class="d-flex justify-content-center mb-5">
       <div class="p-2" v-if="!myPokex">
         <Loader />
       </div>

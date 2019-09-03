@@ -1,12 +1,18 @@
 <template>
-  <div class="mt-2 flex-column text-center container d-flex flex-contents-center">
-    <div class="p-2 pic">
-      <img src="../assets/notfound.jpg" class='img-fluid' alt="pikachu">
+  <div class="white mb-4 container" style="border-radius: 30px">
+    <div class="d-flex justify-content-center">
+      <div class="mt-4 mb-5">
+        <div class="mt-4 mt-4 mb-4 text-center">
+          <h4> page not found</h4>
+        </div>
+        <div class="p-1 mt-4 text-center d-flex flex-wrap flex-column">
+          <div class="p-2 pic">
+            <img src="../assets/notfound.jpg" class='img-fluid' alt="pikachu">
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="p-0">
-      <span> page not found</span>
-    </div>
-  </div>
+</div>
 </template>
 <script>
 export default {
@@ -16,5 +22,5 @@ export default {
 
 <style lang="stylus" scoped>
 .pic > img
-  width 270px
+  width 300px
 </style>

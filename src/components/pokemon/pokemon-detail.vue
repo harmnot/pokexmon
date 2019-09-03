@@ -28,7 +28,7 @@
           <div class="p-1">
             <input class="form-control form-control-lg" type="email" v-model="emailUser" placeholder="Pokemon Bag Email">
           </div>
-          <div class="mb-4 p-2">
+          <div class="mb-5 p-2">
             <button type="button" class="btn btn-primary" v-if="!loadingSavePokemon" @click="savePokemon(pokemonDetail._id)">Save to bag</button>
             <button class="btn btn-primary" type="button" disabled v-if="loadingSavePokemon">
               <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
@@ -45,18 +45,18 @@
         <div class="p-1" v-if="savedToBag">
           <button type="button" class="btn btn-primary" @click="goToMylistPokemon()">My pokex bag</button>
         </div>
-        <div class="mb-4 p-1" v-if="savedToBag">
+        <div class="mb-5 p-1" v-if="savedToBag">
           <button type="button" class="btn btn-primary" style="background-color: #ffcb05;" @click="allPokemons()" >Find more pokemons</button>
         </div>
         <div class="p-1 pic" v-if="failedCought && !temp" style="margin-top: 78px;">
           <img src="../../assets/caat.jpg" class="img-fluid" alt="pokex">
         </div>
-          <div class="mt-2 p-1 text-center" v-if="failedCought && !temp">
-            <h4> try catch another pokemons</h4>
-          </div>
-          <div class="mb-4 p-1" v-if="failedCought && !temp">
-            <button type="button" class="btn btn-primary" @click="allPokemons()">All pokemons</button>
-          </div>
+        <div class="mt-2 p-1 text-center" v-if="failedCought && !temp">
+          <h4> try catch another pokemons</h4>
+        </div>
+        <div class="mb-4 p-1" v-if="failedCought && !temp">
+          <button type="button" class="btn btn-primary" @click="allPokemons()">All pokemons</button>
+        </div>
         <div class="p-0 mb-4" v-if="!saveAndGiveName && !failedCought">
           <h1>{{ pokemonDetail.name }}</h1>
         </div>
