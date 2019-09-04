@@ -7,11 +7,11 @@ for our Back End you can trigger to [here](https://github.com/harmnot/pokemon) f
 
 ## PokeXmon
 
-this is a logo of our website and this text/logo can directly you to the Homagepage.
+this is the logo of our website and will directly you to the Home page.
 
 ## Pokemons
 
-this is for show the list of pokemons, show the name, pic and how many people catch them.
+this show the list of pokemons, their names, pics and how many people have caught them.
 
 ## About
 
@@ -19,7 +19,7 @@ this is for author info.
 
 ### for mobile 
 
-you can see this pics, if you want to see our pokemons, just click the orange menu burger above and click pokemons, and then you can choose pokemons what you want then scroll down and see the button called **Catch this** you can catch them and see what happen , after you successfully catch them save them to your email and name them.
+you can see the pics below, if you want to see all our pokemons, just click the top orange menu burger for mobile view and click pokemons, and then you select pokemons what you want then scroll down and see the button called **Catch this** you can catch them and see what happen , after you successfully capture them, save them to your email and name them.
 
 
 <img width="151" alt="Screen Shot 2019-09-04 at 21 58 40" src="https://user-images.githubusercontent.com/54632215/64267125-06d5dd80-cf60-11e9-9852-44d114e3b06c.png">
