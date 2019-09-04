@@ -38,7 +38,7 @@
                 <h4> PokeXmon </h4>
               </div>
               <div class="p-0 text-left">
-                <p> take time to relax and have fun with our cute pokemons, <br>they wait to be yours</p>
+                <p> take time to relax and have fun with our cute pokemons, <br>they want to be yours</p>
               </div>
             </div>
           </div>

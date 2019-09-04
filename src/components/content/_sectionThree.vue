@@ -3,7 +3,7 @@
     <div class="m container text-center d-flex flex-column flex-wrap justify-content-center">
       <div class="d-flex flex-column">
         <div>
-          <h3> Play our game just in few minutes</h3>
+          <h3> Play our game just in just minutes</h3>
         </div>
         <div>
           <p>found your favorite pokemons, then show them to your friends</p>
@@ -15,7 +15,7 @@
             <img src="../../assets/pokeballblues.png" alt="pokeball">
           </div>
           <div class="mt-2 line">
-            <p> cought them</p>
+            <p> caught them</p>
           </div>
         </div>
         <div class="d-flex flex-column" :class="{box: !isMobiles, boxx: isMobiles}">

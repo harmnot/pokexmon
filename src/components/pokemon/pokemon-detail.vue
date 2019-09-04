@@ -19,7 +19,7 @@
         </div>
         <div class="mb-4 p-3 d-flex flex-column flex-wrap" v-if="saveAndGiveName">
           <div class="p-1">
-            <h4> Horeeyyy... you cought {{ pokemonDetail.name }}</h4>
+            <h4> Horeeyyy... you caught {{ pokemonDetail.name }}</h4>
             <p> save <b>{{ pokemonDetail.name }}</b> to your bag list, give the Nickname and save to your email</p>
           </div>
           <div class="p-1">
@@ -208,8 +208,8 @@ export default {
         try {
           const { data } = await this.$axios.post('/pokex/createpokex', dataToSend);
           if (data.result.email === this.emailUser.toLowerCase()) {
-            this.$store.commit('ADD_POKEMON_COUGHT', {id: this.id, theId: data.pokex._id });
-            this.nickName = data.pokex.nickname;
+            this.$store.commit('ADD_POKEMON_COUGHT', {id: this.id, theId: data.result.pokex._id });
+            this.nickName = data.result.pokex.nickname;
             this.loadingSavePokemon = false;
             this.failedCought = true;
             this.temp = true;
