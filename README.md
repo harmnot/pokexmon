@@ -1,39 +1,18 @@
-# pokemon-client
+# Welcome to PokeXmon!
 
-## Project setup
-```
-npm install
-```
+this cute very simple game so easy on the home page , we have 3 menus **PokeXmon** ,  **About**, and **Pokemons**
+our Front End build by [Vue js](https://vuejs.org/), [Stylus](http://stylus-lang.com/) for CSS Processor, [Vuex](https://vuex.vuejs.org/) for state management and [Travis CI](https://travis-ci.org/) for CI & CD ( __Continuous Integration and Continuous Delivery and/or Continuous Deployment__ )
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+for our Back End you can trigger to [here](https://github.com/harmnot/pokemon) for more info.
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## PokeXmon
 
-### Run your tests
-```
-npm run test
-```
+this is a logo of our website and this text/logo can directly you to the Homagepage.
 
-### Lints and fixes files
-```
-npm run lint
-```
+## Pokemons
 
-### Run your end-to-end tests
-```
-npm run test:e2e
-```
+this is for show the list of pokemons, show the name, pic and how many people catch them.
 
-### Run your unit tests
-```
-npm run test:unit
-```
+## About
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+this is for author info.

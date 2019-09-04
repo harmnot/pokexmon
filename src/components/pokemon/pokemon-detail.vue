@@ -60,7 +60,7 @@
         <div class="p-0 mb-4" v-if="!saveAndGiveName && !failedCought">
           <h1>{{ pokemonDetail.name }}</h1>
         </div>
-        <div class="mb-4 container d-flex flex-column" v-if="!saveAndGiveName && !failedCought">
+        <div class="mb-2 container d-flex flex-column" v-if="!saveAndGiveName && !failedCought">
           <div class="p-0 d-flex mb-4 flex-column flex-wrap">
             <div class="container shadow p-2 mb-2 bg-white rounded" :class="{'bigscreen': isBigScreen }" >
               <div class="d-flex flex-row justify-content-between">

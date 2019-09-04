@@ -3,10 +3,10 @@
     <div class="m container text-center d-flex flex-column flex-wrap justify-content-center">
       <div class="d-flex flex-column">
         <div>
-          <h3> Play our game just in just minutes</h3>
+          <h3> Play our game in just minutes</h3>
         </div>
         <div>
-          <p>found your favorite pokemons, then show them to your friends</p>
+          <p>find your favorite pokemons and show them to your friends</p>
         </div>
       </div>
       <div class="mt-2 space d-flex text-center flex-column flex-wrap align-items-center justify-content-center">
@@ -23,7 +23,7 @@
             <img src="../../assets/plus.png" alt="pokemon">
           </div>
           <div class="mt-2 line">
-            <p> give name & save</p>
+            <p> name them & save</p>
           </div>
         </div>
         <div class="d-flex flex-column" :class="{box: !isMobiles, boxx: isMobiles}">
@@ -78,7 +78,7 @@ export default {
   max-width none
   position absolute
   left 50%
-    top 0
+  top 0
   transform translateX(-50%)
   text-align: center;
 .space
