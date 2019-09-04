@@ -61,7 +61,7 @@
           <h1>{{ pokemonDetail.name }}</h1>
         </div>
         <div class="mb-4 container d-flex flex-column" v-if="!saveAndGiveName && !failedCought">
-          <div class="p-0 d-flex flex-column flex-wrap">
+          <div class="p-0 d-flex mb-4 flex-column flex-wrap">
             <div class="container shadow p-2 mb-2 bg-white rounded" :class="{'bigscreen': isBigScreen }" >
               <div class="d-flex flex-row justify-content-between">
                 <div class="d-flex flex-lg-row" style="width: 150px;">
@@ -105,7 +105,7 @@
             </div>
           </div>
         </div>
-        <div class="mb-4 p-2" v-if="!cought && (!saveAndGiveName && !failedCought)">
+        <div class="mb-5 p-3" v-if="!cought && (!saveAndGiveName && !failedCought)">
           <button type="button" class="btn btn-primary" @click="coughtPokemon()">catch this</button>
         </div>
       </div>
