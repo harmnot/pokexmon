@@ -24,9 +24,17 @@ export default new Vuex.Store({
       state.emailUser = payload;
     },
     ADD_POKEMON_COUGHT(state, payload) {
-      for (let i of state.pokemons) {
-        if (i._id === payload.id) {
-          i.owned.push(payload.theId);
+      if (state.pokemons !== null ) {
+        for (let i of state.pokemons) {
+          if (i._id === payload.id) {
+            i.owned.push(payload.theId);
+          }
+        }
+      } else if( state.pokemonsDashboard !== null ) {
+        for (let j of state.pokemonsDashboard) {
+          if (j._id === payload.id) {
+            j.owned.push(payload.theId);
+          }
         }
       }
     },
@@ -41,9 +49,6 @@ export default new Vuex.Store({
     },
     DELETE_MYPOKEMON(state, { id, idPokemon }) {
       state.myPokex.pokex = state.myPokex.pokex.filter(({ _id }) => _id !== id);
-      if (state.myPokex.pokex.length === 0) {
-        state.hasPokemon = false;
-      }
       if (state.pokemons !== null) {
         const index = state.pokemons.findIndex(({ _id: theiD }) => theiD === idPokemon);
         if (index !== -1) {
@@ -60,6 +65,9 @@ export default new Vuex.Store({
             state.pokemonsDashboard[index].owned.splice(findIndex, 1);
           }
         }
+      }
+      if (state.myPokex.pokex.length === 0) {
+        state.hasPokemon = false;
       }
     },
   },

@@ -207,7 +207,7 @@ export default {
         this.loadingSavePokemon = true;
         try {
           const { data } = await this.$axios.post('/pokex/createpokex', dataToSend);
-          if (data.result.email === this.emailUser.toLowerCase()) {
+          if (data.result.email === this.emailUser) {
             this.$store.commit('ADD_POKEMON_COUGHT', {id: this.id, theId: data.result.pokex._id });
             this.nickName = data.result.pokex.nickname;
             this.loadingSavePokemon = false;
@@ -217,6 +217,7 @@ export default {
             this.savedToBag = true;
           }
         } catch (err) {
+          console.log(err, 'iniii error')
           this.$swal.fire({
             title: 'Error',
             text: 'something went wrong',
