@@ -14,6 +14,6 @@ deploy:
   bucket: $S3_BUCKET
   local_dir: dist
   skip_cleanup: true
-  acl: public_read
+  region: 'ap-southeast-1'
   on:
     branch: master
